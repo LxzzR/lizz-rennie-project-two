@@ -1,0 +1,22 @@
+h1 {
+  font-family: $heading-text;
+  font-size: 6.4rem;
+}
+
+h2, 
+h3, 
+button,
+.logo {
+  font-family: $accent-text;
+}
+
+p,
+a {
+  font-family: $main-text;
+}
+
+p,
+a,
+button {
+  font-size: 2rem;
+}
