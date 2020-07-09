@@ -1,0 +1,26 @@
+// Page Navigation 
+header {
+  li {
+    float: right;
+    padding: 10px 20px;
+    a{
+      color: $black;
+      font-weight: 600;
+      position: relative;
+      text-transform: uppercase;
+      &:before {
+        background: $accent;
+        bottom: -1px;
+        content: '';
+        height: 3px;
+        position: absolute;
+        opacity: 0;
+        transform: opacity 250ms;
+        width: 100%;
+      }
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.landing {
+  background: url(../../assets/header-home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+//  MEDIA Q NEEDED LATER ---------- !!
+.landing .img-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}

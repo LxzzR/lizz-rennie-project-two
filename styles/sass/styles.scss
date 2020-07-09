@@ -2,8 +2,17 @@
 @import 'variables';
 @import 'typography';
 @import 'global';
+@import 'mixins';
 
-// For my set-up comfort
-.img-wrapper {
-  max-width: 50%;
-}
+// SITE STYLES
+@import 'header';
+@import 'footer';
+
+// HOME PAGE
+@import 'guides';
+@import 'landing';
+@import 'features';
+
+// BLOG
+
+// CONTACT

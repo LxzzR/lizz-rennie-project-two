@@ -1,3 +1,21 @@
+// Reset default element styling
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 48%;
+}
+
+body {
+  background: $black;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -7,6 +25,30 @@ img {
   width: 100%;
 }
 
-button {
-  border: none;
+ul {
+  list-style: none;
 }
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+.button-link {
+  background: $secondary;
+  display: inline-block;
+  color: $white;
+  border: none;
+  margin: 20px 0;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+
+// Layouts
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 90%;
+}
+

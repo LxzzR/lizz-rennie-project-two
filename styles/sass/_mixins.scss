@@ -1,0 +1,17 @@
+// Yellow image pseudo accent 
+@mixin pseudo-accent($bottom, $left) {
+  background: $accent;
+  bottom: $bottom;
+  content: '';
+  height: 100%;
+  left: $left;
+  position: absolute;
+  width: 100%;
+}
+
+// Flex Mixins
+@mixin flex-tween {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

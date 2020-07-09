@@ -1,0 +1,38 @@
+// multiple feature selctors ----- +
+.featured-images, 
+.featured-articles {
+  background: $primary;
+  padding: $mobile;
+}
+
+.featured-images .container,
+.site-features,
+.featured-articles {
+  @include flex-tween;
+}
+
+// Site features ----- +
+.site-features {
+  background: $white;
+}
+
+// Featured images ----- +
+.featured-images .img-wrapper {
+  width: 47%;
+}
+
+.featured-images .img-wrapper:last-of-type {
+  display: none;
+}
+
+// Featured Articles ----- +
+.featured-articles .img-wrapper {
+  position: relative;
+  img {
+    position: relative;
+    z-index: 1;
+  }
+  &::before {
+    @include pseudo-accent(-10px, 10px);
+  }
+}

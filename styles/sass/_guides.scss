@@ -1,0 +1,22 @@
+.guide {
+  background: $white;
+  @include flex-tween;
+  }
+
+.guide:first-of-type {
+  .img-wrapper {
+    position: relative;
+    margin: auto;
+    width: 40%;
+    z-index: 1;
+    img {
+      position: relative;
+    }
+    &::before {
+      @include pseudo-accent(-10px, 10px)
+    }
+    }
+  .copy-wrapper {
+    width: 100%;
+  }
+  }
