@@ -1,6 +1,7 @@
 .guide {
   background: $white;
   @include flex-tween;
+  padding: $mobile;
   }
 
   .guide:first-of-type {

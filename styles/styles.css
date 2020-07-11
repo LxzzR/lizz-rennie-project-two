@@ -205,6 +205,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 0;
 }
 
 .guide:first-of-type .img-wrapper {
@@ -267,7 +268,7 @@ footer {
 }
 
 .featured-images .img-wrapper {
-  width: 49%;
+  width: 47%;
 }
 
 .featured-images .img-wrapper:last-of-type {
