@@ -4,7 +4,9 @@ nav {
   text-align: center;
   a {
     color: $black;
+    display: inline-block;
     font-weight: 600;
+    padding: 15px 40px;
     text-transform: uppercase;
   }
 }
@@ -19,10 +21,15 @@ nav {
   border: none;
   font-size: 4rem;
   padding: 15px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .menu-links {
   background: $primary;
+  border-radius: 5px;
+  box-shadow: 0 0 15px lighten($black, 70);
   height: 0;
   overflow: hidden;
   position: absolute;
@@ -30,7 +37,6 @@ nav {
 }
 
 .menu-links li {
-  padding: 15px 40px;
   &:hover,
   &:focus-within {
     background: darken($primary, 5);

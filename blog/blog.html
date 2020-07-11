@@ -6,20 +6,37 @@
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/5b6edc865f.js" crossorigin="anonymous"></script>
   <!-- LOCAL STYLESHEETS -->
   <link rel="stylesheet" href="../styles/styles.css">
   <title>Blog | Sanctuary Helpers</title>
 </head>
-<body>
+<body class="blog">
   <header>
     <div class="container">
       <p class="logo">Sanctuary Helpers</p>
-      <nav>
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><button><i class="fas fa-bars" aria-label="menu"></i></button>
+            <ul class="menu-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="./blog/blog.html">Blog</a></li>
+              <li><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Desktop menu -->
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./blog/blog.html">Blog</a></li>
+          <li><a href="./contact/contact.html">Contact</a></li>
         </ul>
       </nav>
       <h1>Blog</h1>
