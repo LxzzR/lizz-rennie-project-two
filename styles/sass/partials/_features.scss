@@ -38,13 +38,23 @@
 }
 
 // Featured Articles ----- +
-.featured-articles article:first-of-type .img-wrapper {
+.featured-articles .img-wrapper {
   position: relative;
+  z-index: 1;
   img {
     position: relative;
     z-index: 1;
   }
+}
+.featured-articles article:first-of-type .img-wrapper {
   &::before {
     @include pseudo-accent(-10px, 10px);
   }
 }
+
+.featured-articles article:last-of-type .img-wrapper {
+  &::before {
+    @include pseudo-accent(-10px, -10px);
+  };
+}
+

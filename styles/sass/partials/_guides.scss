@@ -1,14 +1,14 @@
 .guide {
   background: $white;
   @include flex-tween;
-  padding: $mobile;
   }
 
   .guide:first-of-type {
+    padding: $mobile;
     .img-wrapper {
+      width: 60%;
       position: relative;
       margin: auto;
-      width: 60%;
       z-index: 1;
       img {
         position: relative;
@@ -24,7 +24,6 @@
   
   .guide:last-of-type {
     .img-wrapper {
-      width: 120%;
       margin: auto
     }
   }
