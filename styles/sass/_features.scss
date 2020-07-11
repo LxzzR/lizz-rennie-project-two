@@ -16,9 +16,13 @@
   background: $white;
 }
 
+.site-features h2 {
+  text-transform: uppercase;
+}
+
 // Featured images ----- +
 .featured-images .img-wrapper {
-  width: 47%;
+  width: 49%;
 }
 
 .featured-images .img-wrapper:last-of-type {

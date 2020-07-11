@@ -1,3 +1,9 @@
+h1,
+h2,
+h3 {
+  padding: $mobile;
+}
+
 h1 {
   font-family: $heading-text;
   font-size: 6.4rem;
@@ -23,4 +29,12 @@ p,
 a,
 button {
   font-size: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
 }

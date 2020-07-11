@@ -6,6 +6,8 @@
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/5b6edc865f.js" crossorigin="anonymous"></script>
   <!-- LOCAL STYLESHEETS -->
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Sanctuary Helpers</title>
@@ -13,7 +15,22 @@
 <body>
   <header class="landing">
     <div class="container">
-      <nav>
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu">
+        <ul>
+          <li><button><i class="fas fa-bars" aria-label="menu"></i></button>
+            <ul class="menu-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="./blog/blog.html">Blog</a></li>
+              <li><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+      <!-- Desktop menu -->
+      <nav class="desktop-menu">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#">About</a></li>
@@ -61,18 +78,22 @@
       <section class="site-features">
         <div class="container">
           <div class="copy-wrapper">
+            <i class="fas fa-home"></i>
             <h2>Customized Offers</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugit voluptatibus quia, dolores quasi. Fugiat voluptas dolores, vitae rem vel nobis.</p>
           </div>
           <div class="copy-wrapper">
+            <i class="fas fa-sticky-note"></i>
             <h2>Community</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugit voluptatibus quia, dolores quasi. Fugiat voluptas dolores, vitae rem vel nobis.</p>
           </div>
           <div class="copy-wrapper">
+            <i class="fas fa-users"></i>
             <h2>Blog</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugit voluptatibus quia, dolores quasi. Fugiat voluptas dolores, vitae rem vel nobis.</p>
           </div>
           <div class="copy-wrapper">
+            <i class="fas fa-phone"></i>
             <h2>Get in touch</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sit fugit voluptatibus quia, dolores quasi. Fugiat voluptas dolores, vitae rem vel nobis.</p>
           </div>
@@ -107,19 +128,17 @@
       </section>
 
 
-    <article class="guide">
-      <div class="container">
-        
-        <div class="img-wrapper">
-          <img src="./assets/banner-image.jpg" alt="Soft pastel living room with brown leather couch, lavendar velvet arm chairs and circular drift wood table with fresh flowers on top">
-        </div>
-          
-        <div class="copy-wrapper">
-          <h2>Search By Style</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repudiandae, eveniet, architecto modi dicta ratione minus quisquam enim debitis ipsa reiciendis quae natus iste qui earum excepturi temporibus illum incidunt.</p>
-          <a href="#" class="button-link">Find Out More</a>
-        </div>
+    <article class="guide">        
+      <div class="img-wrapper">
+        <img src="./assets/banner-image.jpg" alt="Soft pastel living room with brown leather couch, lavendar velvet arm chairs and circular drift wood table with fresh flowers on top">
       </div>
+      <div class="container"> 
+      <div class="copy-wrapper">
+        <h2>Search By Style</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur repudiandae, eveniet, architecto modi dicta ratione minus quisquam enim debitis ipsa reiciendis quae natus iste qui earum excepturi temporibus illum incidunt.</p>
+        <a href="#" class="button-link">Find Out More</a>
+      </div>
+    </div>
     </article>
   </main>
 

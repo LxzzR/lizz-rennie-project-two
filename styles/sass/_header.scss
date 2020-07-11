@@ -1,13 +1,55 @@
-// Page Navigation 
-header {
+// Navigation position -----
+nav {
+  float: right;
+  a {
+    color: $black;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+// Page Navigation Mobile -----
+.mobile-menu {
+  position: relative;
+}
+
+.mobile-menu button {
+  background: transparent;
+  border: none;
+  font-size: 4rem;
+  padding: 15px;
+}
+
+.menu-links {
+  background: $primary;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+}
+
+.menu-links li {
+  padding: 15px 40px;
+  &:hover,
+  &:focus-within {
+    background: darken($primary, 5);
+  }
+}
+
+.mobile-menu li:hover .menu-links,
+.mobile-menu li:focus-within .menu-links {
+  height: auto;
+  z-index: 2;
+}
+
+// Page Navigation Desktop -----
+.desktop-menu {
+  display: none;
   li {
     float: right;
     padding: 10px 20px;
     a{
-      color: $black;
-      font-weight: 600;
       position: relative;
-      text-transform: uppercase;
       &:before {
         background: $accent;
         bottom: -1px;
@@ -17,10 +59,11 @@ header {
         opacity: 0;
         transform: opacity 250ms;
         width: 100%;
+        }
+        &:hover::before {
+          opacity: 1;
+        }
       }
-      &:hover::before {
-        opacity: 1;
-      }
-    }
   }
 }
+

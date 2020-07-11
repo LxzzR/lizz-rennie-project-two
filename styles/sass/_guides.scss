@@ -3,20 +3,28 @@
   @include flex-tween;
   }
 
-.guide:first-of-type {
-  .img-wrapper {
-    position: relative;
-    margin: auto;
-    width: 40%;
-    z-index: 1;
-    img {
+  .guide:first-of-type {
+    .img-wrapper {
       position: relative;
+      margin: auto;
+      width: 50%;
+      z-index: 1;
+      img {
+        position: relative;
+      }
+      &::before {
+        @include pseudo-accent(-10px, 10px)
+      }
     }
-    &::before {
-      @include pseudo-accent(-10px, 10px)
+    .copy-wrapper {
+      width: 100%;
     }
-    }
-  .copy-wrapper {
-    width: 100%;
   }
+  
+  .guide:last-of-type {
+    .img-wrapper {
+      width: 120%;
+      margin: auto
+    }
   }
+  

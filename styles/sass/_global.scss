@@ -7,17 +7,12 @@
 
 html {
   font-size: 48%;
+  scroll-behavior: smooth;
 }
 
 body {
   background: $black;
   color: $black;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -39,16 +34,24 @@ img {
   display: inline-block;
   color: $white;
   border: none;
-  margin: 20px 0;
-  padding: 10px 15px;
+  margin: $mobile;
+  padding: 10px 15px 6px 15px;
   text-transform: uppercase;
+  transition: scale 300ms, background 300ms;
+  &:hover {
+    background: lighten($secondary, 3);
+    transform: scale(1.02);
+  }
 }
-
 
 // Layouts
 .container {
   max-width: 1200px;
   margin: auto;
   width: 90%;
+}
+
+.copy-wrapper {
+  margin: $mobile;
 }
 
