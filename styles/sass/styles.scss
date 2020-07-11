@@ -1,18 +1,18 @@
 // GLOBAL STYLES
-@import 'setup';
-@import 'variables';
-@import 'typography';
-@import 'global';
-@import 'mixins';
+@import './partials/setup';
+@import './partials/variables';
+@import './partials/typography';
+@import './partials/global';
+@import './partials/mixins';
 
 // GLOBAL SECTIONS
-@import 'header';
-@import 'footer';
+@import './partials/header';
+@import './partials/footer';
 
 // HOME PAGE
-@import 'landing';
-@import 'guides';
-@import 'features';
+@import './partials/landing';
+@import './partials/guides';
+@import './partials/features';
 
 // BLOG
 

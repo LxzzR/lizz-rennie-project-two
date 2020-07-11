@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 48%;
+  font-size: 30%;
   scroll-behavior: smooth;
 }
 
@@ -46,9 +46,9 @@ img {
 
 // Layouts
 .container {
-  max-width: 1200px;
-  margin: auto;
-  width: 90%;
+  max-width: 100vw;
+  margin: 0 auto;
+  width: 90vw;
 }
 
 .copy-wrapper {

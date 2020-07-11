@@ -47,7 +47,7 @@ a {
 }
 
 html {
-  font-size: 48%;
+  font-size: 30%;
   scroll-behavior: smooth;
 }
 
@@ -89,9 +89,9 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-  width: 90%;
+  max-width: 100vw;
+  margin: 0 auto;
+  width: 90vw;
 }
 
 .copy-wrapper {
@@ -100,6 +100,7 @@ img {
 
 nav {
   float: right;
+  text-align: center;
 }
 
 nav a {
@@ -188,9 +189,10 @@ footer {
 .landing .img-wrapper {
   display: none;
   left: 0;
-  top: 50%;
+  bottom: 0;
   position: absolute;
   width: 100%;
+  width: 50%;
 }
 
 .guide {
@@ -211,7 +213,7 @@ footer {
 .guide:first-of-type .img-wrapper {
   position: relative;
   margin: auto;
-  width: 50%;
+  width: 60%;
   z-index: 1;
 }
 
@@ -267,6 +269,15 @@ footer {
   text-transform: uppercase;
 }
 
+.site-features i {
+  background: #F8FB05;
+  border-radius: 50%;
+  float: left;
+  font-size: 3.5rem;
+  margin: 10px 10px 0 0;
+  padding: 10px;
+}
+
 .featured-images .img-wrapper {
   width: 47%;
 }
@@ -275,16 +286,16 @@ footer {
   display: none;
 }
 
-.featured-articles .img-wrapper {
+.featured-articles article:first-of-type .img-wrapper {
   position: relative;
 }
 
-.featured-articles .img-wrapper img {
+.featured-articles article:first-of-type .img-wrapper img {
   position: relative;
   z-index: 1;
 }
 
-.featured-articles .img-wrapper::before {
+.featured-articles article:first-of-type .img-wrapper::before {
   background: #F8FB05;
   bottom: -10px;
   content: '';

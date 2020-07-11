@@ -14,11 +14,19 @@
 // Site features ----- +
 .site-features {
   background: $white;
+  h2 {
+      text-transform: uppercase;
+  }
+  i {
+    background: $accent;
+    border-radius: 50%;
+    float: left;
+    font-size: 3.5rem;
+    margin: 10px 10px 0 0;
+    padding: 10px;
+  }
 }
 
-.site-features h2 {
-  text-transform: uppercase;
-}
 
 // Featured images ----- +
 .featured-images .img-wrapper {
@@ -30,7 +38,7 @@
 }
 
 // Featured Articles ----- +
-.featured-articles .img-wrapper {
+.featured-articles article:first-of-type .img-wrapper {
   position: relative;
   img {
     position: relative;
