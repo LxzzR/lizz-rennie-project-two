@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/site.webmanifest">
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&display=swap" rel="stylesheet">
@@ -13,17 +18,33 @@
   <title>Sanctuary Helpers</title>
   <title>Contact | Sanctuary Helpers</title>
 </head>
-<body>
+<body class="contact">
   <header>
     <div class="container">
       <p class="logo">Sanctuary Helpers</p>
       <nav>
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><button><i class="fas fa-bars" aria-label="menu"></i></button>
+            <ul class="menu-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html">About</a></li>
+              <li><a href="../blog/blog.html">Blog</a></li>
+              <li><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+          </li>
         </ul>
+      </nav>
+      <!-- Desktop menu -->
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="./contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
       </nav>
       <h1>Get In Touch</h1>
   </div>
@@ -32,22 +53,20 @@
   <main>
     <div class="container">
       <form class="contact-form" action="/">
-        <fieldset>
-          <label for="name">Please enter your name</label>
-          <input type="text" placeholder="Name" id="name">
-        </fieldset>
-        <fieldset>
-          <label for="email">Please enter your email</label>
-          <input type="email" placeholder="Email Address" id="email">
-        </fieldset>
-        <fieldset>
-          <label for="comment">Leave a message</label>
-          <input type="text" placeholder="message" id="message">
-        </fieldset>
-        <button type="submit">Submit</button>
+        <div class="form-wrapper">
+          <fieldset>
+            <label for="name">Please enter your name</label>
+            <input type="text" placeholder="Name" id="name" name="name" required>
+            <label for="email">Please enter your email</label>
+            <input type="email" placeholder="Email Address" id="email" name="email" required>
+            <label for="comment">Leave a message</label>
+            <input type="text" placeholder="Message" id="comment" name="comment">
+          </fieldset>
+          <button type="submit" class="button">Submit</button>
+        </div>
       </form>
 
-      <div class="contact">
+      <div class="social">
         <ul>
           <li><a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a></li>
           <li><a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a></li>
@@ -60,7 +79,7 @@
           123 Queen Street West<br>
           Unit 10<br>
           Toronto, Ontario<br>
-          M5V2D5
+          M5V 2D5
         </address>
       </div>
     </div>

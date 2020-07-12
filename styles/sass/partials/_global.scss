@@ -32,18 +32,19 @@ img {
 //   text-align: center;
 // }
 
-.button-link {
+.button-link,
+.button {
   background: $secondary;
   display: inline-block;
   color: $white;
   border: none;
   margin: 20px auto;
-  padding: 10px 15px 6px 15px;
+  padding: 10px 15px 4px 15px;
   text-align: center;
-  text-transform: uppercase;
   transition: scale 300ms, background 300ms;
   &:hover {
     background: lighten($secondary, 3);
+    cursor: pointer;
     transform: scale(1.02);
   }
 }

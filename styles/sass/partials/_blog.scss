@@ -65,37 +65,3 @@
     width: 75%;
   }
 }
-
-.blog form {
-  fieldset {
-    border: none;
-    display: grid;
-    label {
-      visibility: hidden;
-    }
-    input {
-      padding: 20px;
-    }
-    input[name=name],
-    input[name=email] {
-      background: transparent;
-      border: none;
-      border-bottom: 3px solid $secondary;
-    }
-    input[id=comment] {
-      border: 2px solid $secondary;
-      width: 100%;
-      height: 150px;
-    }
-  }
-  button {
-    background: $secondary;
-    border: none;
-    border-radius: none;
-    color: $white;
-    display: block;
-    margin-top: 20px;
-    padding: 10px 0 6px 0;
-    width: 100%;
-  }
-}

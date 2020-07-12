@@ -5,7 +5,11 @@
 @import './partials/global';
 @import './partials/mixins';
 
-// GLOBAL SECTIONS
+// SITE SECTIONS
+@import './partials/header';
+@import './partials/footer';
+@import './partials/form';
+
 @import './partials/header';
 @import './partials/footer';
 
@@ -18,3 +22,4 @@
 @import './partials/blog';
 
 // CONTACT
+@import './partials/contact';
