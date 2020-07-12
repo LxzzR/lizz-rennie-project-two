@@ -4,7 +4,7 @@
   background-size: cover;
   padding: 0;
   margin: 0;
-  height: 30vh;
+  min-height: 40vh;
 }
 
 .blog main {
@@ -36,6 +36,7 @@
 }
 
 .side-bar {
+  display: none;
   background: $accent;
   margin-top: 60px;
   position: relative;
@@ -51,25 +52,47 @@
       margin-left: 20px;
     }
   }
-  .img-wrapper {
-    position: relative;
-    left: 20px;
-    top: -25px;
-    img {
-      position: relative;
-    }
-    &::before {
-      @include pseudo-accent(-10px, 0px);
-    }
-  }
+}
 
 .comment {
   display: flex;
   .img-wrapper {
-    padding: 50px 15px 0 0;
+    padding: 40px 15px 0 0;
     width: 25%;
   }
   .copy-wrapper {
     width: 75%;
   }
-}}
+}
+
+.blog form {
+  fieldset {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    label {
+      visibility: hidden;
+    }
+    input[name=name],
+    input[name=email] {
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid $secondary;
+      width: 50%;
+    }
+    input[id=comment] {
+      border: 2px solid $secondary;
+      width: 100%;
+      height: 150px;
+    }
+  }
+  button {
+    background: $secondary;
+    border: none;
+    border-radius: none;
+    color: $white;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+}

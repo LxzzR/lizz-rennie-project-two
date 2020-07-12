@@ -8,22 +8,37 @@ h3 {
   padding: $mobile;
 }
 
+h1,
+h2,
+h3,
+button,
+.button-link,
+.logo {
+  text-transform: uppercase;
+}
+
 h1 {
   font-family: $heading-text;
   font-size: 6.4rem;
 }
 
-h1, 
-h2 {
-  text-transform: uppercase;
+h2 
+.button-link,
+.logo,
+button {
+  font-family: $accent-text;
 }
 
-h2, 
-h3, 
-.button-link,
-.logo {
-  font-family: $accent-text;
+
+h2,
+.button-link {
   font-size: 3.3rem;
+}
+
+
+h3,
+.logo {
+  font-size: 2.2rem;
 }
 
 p,
