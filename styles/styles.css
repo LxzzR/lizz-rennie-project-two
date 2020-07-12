@@ -446,7 +446,7 @@ footer {
   left: 0;
   bottom: -10%;
   position: absolute;
-  width: 50%;
+  width: 55%;
 }
 
 .guide {
@@ -748,6 +748,9 @@ footer {
   .landing h1 {
     width: 45%;
   }
+  .landing .img-wrapper {
+    width: 53%;
+  }
   .guide .container:first-of-type {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -824,12 +827,21 @@ footer {
   }
   .landing {
     height: 90vh;
-    min-height: 800px;
+    min-height: 700px;
   }
   .landing .img-wrapper {
     display: block;
   }
-  .guide:first-of-type {
+  .landing .img-wrapper .img-wrapper {
+    width: 50%;
+  }
+  .landing .guide:first-of-type {
     padding: 75px 0;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1500px) {
+  .landing {
+    min-height: 900px;
   }
 }

@@ -10,13 +10,22 @@
   // HOME PAGE
   .landing {
     height: 90vh;
-    min-height: 800px;
+    min-height: 700px;
     .img-wrapper {
       display: block;
+      .img-wrapper {
+        width: 50%;
     }
   }
 
   .guide:first-of-type {
     padding: $desktop;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .landing {
+    min-height: 900px;
+    }
   }
 }
