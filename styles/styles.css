@@ -23,9 +23,6 @@ h3,
 .button-link,
 .logo {
   font-family: "Kumar One", cursive;
-}
-
-h2 {
   font-size: 3.3rem;
 }
 
@@ -36,6 +33,7 @@ a {
 
 p,
 a,
+li,
 button {
   font-size: 2rem;
 }
@@ -46,6 +44,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.logo {
+  font-size: 2.2rem;
 }
 
 * {
@@ -78,10 +80,6 @@ img {
   width: 100%;
 }
 
-.button-wrapper {
-  text-align: center;
-}
-
 .button-link {
   background: #065635;
   display: inline-block;
@@ -109,6 +107,12 @@ img {
 
 .copy-wrapper {
   margin: 20px 0;
+}
+
+.logo {
+  display: inline-block;
+  padding: 20px 0;
+  width: 25%;
 }
 
 nav {
@@ -334,4 +338,108 @@ footer {
   left: -10px;
   position: absolute;
   width: 100%;
+}
+
+.blog header {
+  background: url(../../assets/blog-image.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  height: 30vh;
+}
+
+.blog main {
+  background: #E0FDDF;
+}
+
+.blog main .blog-post {
+  background: #f5f5f5;
+  border-right: 10px solid #F8FB05;
+  border-bottom: 10px solid #F8FB05;
+  position: relative;
+  left: -6%;
+  width: 105%;
+}
+
+.blog main .blog-post .copy-wrapper {
+  margin: 0;
+  padding: 20px;
+}
+
+.blog main .blog-post .img-wrapper {
+  margin: auto;
+  position: relative;
+  top: -25px;
+  left: 0;
+}
+
+.blog main .blog-post .img-wrapper img {
+  position: relative;
+}
+
+.blog main .blog-post .img-wrapper::before {
+  background: #F8FB05;
+  bottom: -10px;
+  content: '';
+  height: 100%;
+  left: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.side-bar {
+  background: #F8FB05;
+  margin-top: 60px;
+  position: relative;
+  right: -6%;
+}
+
+.side-bar .copy-wrapper {
+  margin: 0;
+  padding: 0 20px 30px 20px;
+}
+
+.side-bar .copy-wrapper h3 {
+  padding: 10px 0;
+}
+
+.side-bar .copy-wrapper ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.side-bar .img-wrapper {
+  position: relative;
+  left: 20px;
+  top: -25px;
+}
+
+.side-bar .img-wrapper img {
+  position: relative;
+}
+
+.side-bar .img-wrapper::before {
+  background: #F8FB05;
+  bottom: -10px;
+  content: '';
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.side-bar .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.side-bar .comment .img-wrapper {
+  padding: 50px 15px 0 0;
+  width: 25%;
+}
+
+.side-bar .comment .copy-wrapper {
+  width: 75%;
 }
