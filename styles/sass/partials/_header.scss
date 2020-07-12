@@ -6,7 +6,6 @@ nav {
     color: $black;
     display: inline-block;
     font-weight: 600;
-    padding: 15px 40px;
     text-transform: uppercase;
   }
 }
@@ -29,7 +28,7 @@ nav {
 .menu-links {
   background: $primary;
   border-radius: 5px;
-  box-shadow: 0 0 15px lighten($black, 70);
+  box-shadow: 0 0 15px lighten($black, 50);
   height: 0;
   overflow: hidden;
   position: absolute;
@@ -37,6 +36,9 @@ nav {
 }
 
 .menu-links li {
+  a{
+    padding: 15px 40px;
+  }
   &:hover,
   &:focus-within {
     background: darken($primary, 5);
@@ -52,6 +54,7 @@ nav {
 // Page Navigation Desktop -----
 .desktop-menu {
   display: none;
+  padding: 20px;
   li {
     float: right;
     padding: 10px 20px;
@@ -59,12 +62,12 @@ nav {
       position: relative;
       &:before {
         background: $accent;
-        bottom: -1px;
+        bottom: -2px;
         content: '';
-        height: 3px;
+        height: 5px;
         position: absolute;
         opacity: 0;
-        transform: opacity 250ms;
+        transition: opacity 300ms;
         width: 100%;
         }
         &:hover::before {

@@ -1,0 +1,22 @@
+@media all and (min-width: 1024px) {
+  // GLOBAL
+  .mobile-menu {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+  }
+  
+  // HOME PAGE
+  .landing {
+    height: 90vh;
+    min-height: 800px;
+    .img-wrapper {
+      display: block;
+    }
+  }
+
+  .guide:first-of-type {
+    padding: $desktop;
+  }
+}

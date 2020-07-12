@@ -1,0 +1,97 @@
+@media all and (min-width: 768px) {
+  // GLOBAL
+  html {
+    font-size: 58%;
+  }
+
+  main {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+
+  .button-link,
+  .button {
+    margin: 30px 0;
+  }
+
+  // PADDING
+  .featured-images,
+  .guide .container:first-of-type,
+  .site-features .container {
+  padding: $tablet;
+}
+
+  // HOME PAGE
+  .landing {
+    height: 50vh;
+    min-height: 500px;
+    h1 {
+      width: 45%;
+    }
+  }
+
+  // Guides
+  .guide .container:first-of-type {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    .img-wrapper {
+      width: 30%;
+      margin-right: 0;
+    }
+    .copy-wrapper {
+    width: 60%;
+    }
+  }
+
+  .guide:last-of-type {
+    .copy-wrapper {
+      padding: $tablet;
+    }
+    .button-wrapper {
+      text-align: center;
+      }
+  }
+
+  // Features
+  .featured-images {
+    .img-wrapper {
+      width: 32%;
+    }
+    .img-wrapper:last-of-type {
+      display: block;
+    }
+  }
+
+
+  .featured-articles .container {
+    display: flex;
+    justify-content: space-between;
+    article {
+      width: 45%;
+      .img-wrapper {
+        width: 130%;
+      }
+    }
+    article:first-of-type {
+      text-align: right;
+      .img-wrapper {
+        top: -50px;
+        left: -50%;
+      }
+    }
+    article:last-of-type {
+      display: flex;
+      flex-flow: column-reverse;
+      .img-wrapper {
+        bottom: -50px;
+        right: -20%;
+      }
+    }
+  }
+
+}

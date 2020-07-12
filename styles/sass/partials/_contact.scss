@@ -28,14 +28,14 @@
     display: inline-block;
     a i {
       background: $primary;
-      border-radius: 5px;
       color: $secondary;
       font-size: 3rem;
       padding: 10px 15px 5px 0;
-      transition: background 300ms;
+      transition: color 250ms;
       &:hover {
-        background: darken($primary, 5);
+        color: lighten($secondary, 5);
         cursor: pointer;
+        transform: scale(1.01);
       }
     }
   }

@@ -3,15 +3,19 @@
   background: url(../../assets/header-home.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
+  min-height: 400px;
+  position: relative;
+  h1 {
+    padding-top: 40px;
+  }
 }
 
 //  MEDIA Q NEEDED LATER ---------- !!
 .landing .img-wrapper {
   display: none;
   left: 0;
-  bottom: 0;
+  bottom: -10%;
   position: absolute;
-  width: 100%;
   width: 50%;
 }
