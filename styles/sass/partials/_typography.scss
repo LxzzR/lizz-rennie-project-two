@@ -12,6 +12,7 @@ h1,
 h2,
 h3,
 button,
+input::placeholder,
 .button-link,
 .logo {
   text-transform: uppercase;
@@ -42,8 +43,10 @@ h3,
 }
 
 p,
-a {
+a,
+input::placeholder {
   font-family: $main-text;
+  color: $black;
 }
 
 p,

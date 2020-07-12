@@ -9,6 +9,7 @@
 
 .blog main {
   background: $primary;
+  padding: $mobile;
   .blog-post {
     background: $white;
     border-right: 10px solid $accent;
@@ -68,17 +69,18 @@
 .blog form {
   fieldset {
     border: none;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
     label {
       visibility: hidden;
+    }
+    input {
+      padding: 20px;
     }
     input[name=name],
     input[name=email] {
       background: transparent;
       border: none;
       border-bottom: 3px solid $secondary;
-      width: 50%;
     }
     input[id=comment] {
       border: 2px solid $secondary;
@@ -92,7 +94,8 @@
     border-radius: none;
     color: $white;
     display: block;
-    padding: 10px 0;
+    margin: 10px 0;
+    padding: 10px 0 6px 0;
     width: 100%;
   }
 }
