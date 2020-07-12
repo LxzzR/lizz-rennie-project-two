@@ -41,7 +41,7 @@ img {
   margin: 20px auto;
   padding: 10px 15px 4px 15px;
   text-align: center;
-  transition: scale 300ms, background 300ms;
+  transition: scale 250ms, background 250ms;
   &:hover {
     background: lighten($secondary, 3);
     cursor: pointer;

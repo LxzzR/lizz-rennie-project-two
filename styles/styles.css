@@ -72,7 +72,6 @@ p,
 a,
 address,
 input::-webkit-input-placeholder {
-  color: #151514;
   font-family: "Lato", arial, helvetica, sans-Serif;
   line-height: 1.5;
 }
@@ -81,7 +80,6 @@ p,
 a,
 address,
 input:-ms-input-placeholder {
-  color: #151514;
   font-family: "Lato", arial, helvetica, sans-Serif;
   line-height: 1.5;
 }
@@ -90,7 +88,6 @@ p,
 a,
 address,
 input::-ms-input-placeholder {
-  color: #151514;
   font-family: "Lato", arial, helvetica, sans-Serif;
   line-height: 1.5;
 }
@@ -99,7 +96,6 @@ p,
 a,
 address,
 input::placeholder {
-  color: #151514;
   font-family: "Lato", arial, helvetica, sans-Serif;
   line-height: 1.5;
 }
@@ -168,8 +164,8 @@ img {
   margin: 20px auto;
   padding: 10px 15px 4px 15px;
   text-align: center;
-  -webkit-transition: scale 300ms, background 300ms;
-  transition: scale 300ms, background 300ms;
+  -webkit-transition: scale 250ms, background 250ms;
+  transition: scale 250ms, background 250ms;
 }
 
 .button-link:hover,
@@ -294,6 +290,22 @@ form fieldset label {
 
 form fieldset input {
   padding: 10px 0 10px 10px;
+}
+
+form fieldset input::-webkit-input-placeholder {
+  color: #151514;
+}
+
+form fieldset input:-ms-input-placeholder {
+  color: #151514;
+}
+
+form fieldset input::-ms-input-placeholder {
+  color: #151514;
+}
+
+form fieldset input::placeholder {
+  color: #151514;
 }
 
 form fieldset input[name=name],
@@ -577,7 +589,7 @@ footer {
 .blog main .blog-post .img-wrapper {
   margin: auto;
   position: relative;
-  top: -25px;
+  top: -45px;
   left: 0;
 }
 
