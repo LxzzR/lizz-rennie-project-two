@@ -13,19 +13,69 @@
     min-height: 700px;
     .img-wrapper {
       display: block;
-      .img-wrapper {
-        width: 50%;
+      width: 50%;
     }
   }
-
+  
   .guide:first-of-type {
     padding: $desktop;
   }
+
+  .site-features .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .copy-wrapper {
+      width: 40%;
+      position: relative;
+      i {
+        position: absolute;
+        left: -75px;
+      }
+    }
+  }
+
+  .featured-articles .container article {
+    width: 40%;
+  }
+
+  // BLOG
+  .blog main {
+    position: relative;
+    .blog-post {
+      top: -50px;
+      width: 60%;
+      .copy-wrapper {
+        padding-left: 10%;
+      }
+    }
+    .side-bar {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20%;
+      border-left: 10px solid $accent;
+      .img-wrapper {
+        position: relative;
+        top: -15px;
+      }
+    }
+    .comments {
+      width: 80%;
+    }
+    .comment {
+      .img-wrapper {
+        width: 10%;
+      }
+    }
+  }
+
 }
 
 @media all and (min-width: 1500px) {
   .landing {
     min-height: 900px;
-    }
   }
 }
+

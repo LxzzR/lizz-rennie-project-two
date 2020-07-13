@@ -70,7 +70,6 @@
     }
   }
 
-
   .featured-articles .container {
     display: flex;
     justify-content: space-between;
@@ -97,4 +96,8 @@
     }
   }
 
+  //BLOG 
+  .blog header {
+    min-height: 350px;;
+  }
 }

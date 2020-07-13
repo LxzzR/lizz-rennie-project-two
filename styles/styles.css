@@ -590,8 +590,7 @@ footer {
   border-right: 10px solid #F8FB05;
   border-bottom: 10px solid #F8FB05;
   position: relative;
-  left: -6%;
-  width: 105%;
+  left: 0;
 }
 
 .blog main .blog-post .copy-wrapper {
@@ -816,6 +815,9 @@ footer {
     bottom: -50px;
     right: -20%;
   }
+  .blog header {
+    min-height: 350px;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -831,16 +833,65 @@ footer {
   }
   .landing .img-wrapper {
     display: block;
-  }
-  .landing .img-wrapper .img-wrapper {
     width: 50%;
   }
-  .landing .guide:first-of-type {
+  .guide:first-of-type {
     padding: 75px 0;
+  }
+  .site-features .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .site-features .container .copy-wrapper {
+    width: 40%;
+    position: relative;
+  }
+  .site-features .container .copy-wrapper i {
+    position: absolute;
+    left: -75px;
+  }
+  .featured-articles .container article {
+    width: 40%;
+  }
+  .blog main {
+    position: relative;
+  }
+  .blog main .blog-post {
+    top: -50px;
+    width: 60%;
+  }
+  .blog main .blog-post .copy-wrapper {
+    padding-left: 10%;
+  }
+  .blog main .side-bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    border-left: 10px solid #F8FB05;
+  }
+  .blog main .side-bar .img-wrapper {
+    position: relative;
+    top: -15px;
+  }
+  .blog main .comments {
+    width: 80%;
+  }
+  .blog main .comment .img-wrapper {
+    width: 10%;
   }
 }
 
-@media all and (min-width: 1024px) and (min-width: 1500px) {
+@media all and (min-width: 1500px) {
   .landing {
     min-height: 900px;
   }
