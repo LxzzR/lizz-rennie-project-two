@@ -1,20 +1,25 @@
 // === CONTACT ===
 .contact header {
-  background: url(../../assets/contact-image.jpg) no-repeat;
-  // background-position: center;
+  background: url(../assets/contact-image.jpg) no-repeat;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 300px;
+  height: 40vh;
 }
 
 .contact main {
-  background: $primary;
   padding: $mobile;
 }
 
+.contact .container {
+  position: relative;
+}
+
+// Form ----- +
 .contact form {
   padding: 0;
   position: relative;
   display: block;
+  top: -75px;
   &::before {
     @include pseudo-accent(-10px, 10px);
   }
@@ -31,6 +36,7 @@
   
 }
 
+// Social ----- +
 .social {
   padding: 50px 0 30px;
   li {

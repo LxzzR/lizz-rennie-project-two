@@ -1,4 +1,4 @@
-// Reset default element styling
+//  === GLOBAL STYLES ===
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: $white;
+  background: $primary;
   color: $black;
 }
 
@@ -28,6 +28,7 @@ img {
   width: 100%;
 }
 
+// Buttons ----- +
 .button-link,
 .button {
   background: $secondary;
@@ -46,7 +47,7 @@ img {
 }
 
 
-// Layouts
+// Global layouts ----- +
 .container {
   max-width: 100vw;
   margin: 0 auto;

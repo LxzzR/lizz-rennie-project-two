@@ -3,7 +3,7 @@
   background: $primary;
 }
 .blog header {
-  background: url(../../assets/blog-image.jpg) no-repeat;
+  background: url(../assets/blog-image.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 30vh;
@@ -27,7 +27,7 @@
   padding: 20px 10px 20px 15px;
 }
 
-// Blog post -----
+// Blog post ----- +
 .blog-post {
   background: $white;
   border-right: 10px solid $accent;
@@ -62,7 +62,7 @@
   }
 }
 
-// Blog Comments -----
+// Blog Comments ----- +
 .comments {
   padding-left: 5%;
   .comment {
@@ -82,7 +82,7 @@
   }
 }
 
-// Side bar -----
+// Side bar ----- +
 .side-bar { 
   background: $accent;
   border-left: 10px solid $accent;

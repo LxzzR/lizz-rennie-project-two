@@ -1,22 +1,17 @@
 // GLOBAL STYLES
-@import './partials/setup';
 @import './partials/variables';
 @import './partials/typography';
 @import './partials/global';
 @import './partials/mixins';
 
-// SITE SECTIONS
+// GLOBAL SITE SECTIONS
 @import './partials/header';
 @import './partials/footer';
 @import './partials/form';
-
-@import './partials/header';
 @import './partials/footer';
 
 // HOME PAGE
-@import './partials/landing';
-@import './partials/guides';
-@import './partials/features';
+@import './partials/home';
 
 // BLOG
 @import './partials/blog';

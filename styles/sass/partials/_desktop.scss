@@ -1,14 +1,19 @@
 // === DESKTOP STYLES ===
 @media all and (min-width: 1024px) {
-  // Global -----
   .mobile-menu {
     display: none;
   }
   .desktop-menu {
     display: block;
   }
+
+  form {
+    input[name=comment] {
+      height: 200px;
+    }
+  }
   
-  // HOMEPAGE -----
+  // HOMEPAGE ----- +
   .landing {
     height: 90vh;
     min-height: 700px;
@@ -40,9 +45,9 @@
     width: 40%;
   }
 
-  // BLOG -----
+  // BLOG ----- +
   .blog header {
-    height: 100vh;
+    height: 50vh;
   }
 
   .blog .blog-post,
@@ -53,10 +58,33 @@
   .side-bar {
     display: block;
   }
+
+  // CONTACT ------ +
+  .contact header {
+    height: 75vh;
+    background-position: center;
+  }
+  
+  .contact form {
+    top: -100px;
+    width: 70%;
+  }
+  .social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
-
+// === LARGE SCREEN STYLES ===
 @media all and (min-width: 1500px) {
+  header,
+  main,
+  footer {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  
   .landing {
     min-height: 900px;
   }

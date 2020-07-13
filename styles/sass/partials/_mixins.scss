@@ -1,4 +1,8 @@
-// Yellow image pseudo accent 
+// === MIXINS ===
+
+// Yellow image pseudo accent ----- +
+// I discovered that I could have accomplished this accent in * ONE LINE OF CODE * 😫
+// and I will be using box-shadow in future projects for cleaner and more readable code 
 @mixin pseudo-accent($bottom, $left) {
   background: $accent;
   bottom: $bottom;
@@ -9,7 +13,7 @@
   width: 100%;
 }
 
-// Flex Mixins
+// Flex Mixins ----- +
 @mixin flex-tween {
   display: flex;
   flex-flow: row wrap;

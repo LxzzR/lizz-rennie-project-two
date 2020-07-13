@@ -1,6 +1,6 @@
 .landing {
   background: $white;
-  background: url(../../assets/header-home.jpg) no-repeat;
+  background: url(../assets/header-home.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -11,7 +11,6 @@
   }
 }
 
-//  MEDIA Q NEEDED LATER ---------- !!
 .landing .img-wrapper {
   display: none;
   left: 0;

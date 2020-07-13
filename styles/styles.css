@@ -178,7 +178,7 @@ html {
 }
 
 body {
-  background: #f5f5f5;
+  background: #E0FDDF;
   color: #151514;
 }
 
@@ -291,7 +291,7 @@ nav a {
 }
 
 .desktop-menu li {
-  float: right;
+  float: left;
   padding: 10px 20px;
 }
 
@@ -387,88 +387,6 @@ form button {
   width: 100%;
 }
 
-nav {
-  float: right;
-  text-align: center;
-}
-
-nav a {
-  color: #151514;
-  display: inline-block;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.mobile-menu {
-  position: relative;
-}
-
-.mobile-menu button {
-  background: transparent;
-  border: none;
-  font-size: 4rem;
-  padding: 15px;
-}
-
-.mobile-menu button:hover {
-  cursor: pointer;
-}
-
-.menu-links {
-  background: #E0FDDF;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 15px #979791;
-          box-shadow: 0 0 15px #979791;
-  height: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-}
-
-.menu-links li a {
-  padding: 15px 40px;
-}
-
-.menu-links li:hover, .menu-links li:focus-within {
-  background: #c9fcc7;
-}
-
-.mobile-menu li:hover .menu-links,
-.mobile-menu li:focus-within .menu-links {
-  height: auto;
-  z-index: 2;
-}
-
-.desktop-menu {
-  display: none;
-  padding: 20px;
-}
-
-.desktop-menu li {
-  float: right;
-  padding: 10px 20px;
-}
-
-.desktop-menu li a {
-  position: relative;
-}
-
-.desktop-menu li a:before {
-  background: #F8FB05;
-  bottom: -2px;
-  content: '';
-  height: 5px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 300ms;
-  transition: opacity 300ms;
-  width: 100%;
-}
-
-.desktop-menu li a:hover::before {
-  opacity: 1;
-}
-
 footer {
   background: #151514;
   color: #f5f5f5;
@@ -478,7 +396,7 @@ footer {
 
 .landing {
   background: #f5f5f5;
-  background: url(../../assets/header-home.jpg) no-repeat;
+  background: url(../assets/header-home.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -626,7 +544,7 @@ footer {
 }
 
 .blog header {
-  background: url(../../assets/blog-image.jpg) no-repeat;
+  background: url(../assets/blog-image.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 30vh;
@@ -757,20 +675,25 @@ footer {
 }
 
 .contact header {
-  background: url(../../assets/contact-image.jpg) no-repeat;
+  background: url(../assets/contact-image.jpg) no-repeat;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 300px;
+  height: 40vh;
 }
 
 .contact main {
-  background: #E0FDDF;
   padding: 20px 0;
+}
+
+.contact .container {
+  position: relative;
 }
 
 .contact form {
   padding: 0;
   position: relative;
   display: block;
+  top: -75px;
 }
 
 .contact form::before {
@@ -836,17 +759,13 @@ footer {
   html {
     font-size: 58%;
   }
-  main {
-    max-width: 1600px;
-    margin: auto;
-  }
   form input[id=name],
   form input[id=email] {
     margin-bottom: 30px;
     width: 47%;
   }
   .container {
-    max-width: 1000px;
+    max-width: 1100px;
   }
   .button-link,
   .button {
@@ -946,7 +865,11 @@ footer {
   }
   .blog-post .copy-wrapper,
   .comments {
-    padding: 50px 20px 50px 35px;
+    padding: 50px 20px 50px 100px;
+  }
+  .contact form {
+    width: 90%;
+    top: -65px;
   }
 }
 
@@ -956,6 +879,9 @@ footer {
   }
   .desktop-menu {
     display: block;
+  }
+  form input[name=comment] {
+    height: 200px;
   }
   .landing {
     height: 90vh;
@@ -991,7 +917,7 @@ footer {
     width: 40%;
   }
   .blog header {
-    height: 100vh;
+    height: 50vh;
   }
   .blog .blog-post,
   .comments {
@@ -1000,9 +926,28 @@ footer {
   .side-bar {
     display: block;
   }
+  .contact header {
+    height: 75vh;
+    background-position: center;
+  }
+  .contact form {
+    top: -100px;
+    width: 70%;
+  }
+  .social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 @media all and (min-width: 1500px) {
+  header,
+  main,
+  footer {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
   .landing {
     min-height: 900px;
   }

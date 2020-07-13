@@ -1,13 +1,7 @@
 // === TABLET STYLES ===
 @media all and (min-width: 768px) {
-  // Global styles -----
   html {
     font-size: 58%;
-  }
-
-  main {
-    max-width: 1600px;
-    margin: auto;
   }
 
   form {
@@ -19,7 +13,7 @@
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 1100px;
   }
 
   .button-link,
@@ -27,7 +21,7 @@
     margin: 30px 0;
   }
 
-  // Padding
+  // Padding ------ +
   .featured-images,
   .guide .container:first-of-type,
   .guide .copy-wrapper:first-of-type {
@@ -37,7 +31,7 @@
   padding: $tablet;
 }
 
-  // HOME PAGE ----- 
+  // HOME PAGE ----- +
   .landing {
     height: 50vh;
     min-height: 500px;
@@ -69,7 +63,7 @@
     }
   }
 
-  // Features -----
+  // Features ----- +
   .featured-images {
     .img-wrapper {
       width: 32%;
@@ -105,7 +99,7 @@
     }
   }
 
-  //BLOG -----
+  //BLOG ----- +
   .blog header {
     background-position: center;
     min-height: 350px;
@@ -123,6 +117,12 @@
 
   .blog-post .copy-wrapper,
   .comments {
-    padding: 50px 20px 50px 35px;
+    padding: 50px 20px 50px 100px;
+  }
+
+  // CONTACT ------ +
+  .contact form {
+    width: 90%;
+    top: -65px;
   }
 }
