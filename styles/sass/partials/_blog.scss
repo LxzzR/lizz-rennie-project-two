@@ -15,9 +15,19 @@
     border-bottom: 10px solid $accent;
     position: relative;
     left: 0;
+    width: 90%;
     .copy-wrapper {
+      p {
+        padding: $mobile;
+      }
       margin: 0;
-      padding: 20px;
+      padding: 0 5%;
+      .date {
+        font-style: italic;
+      }
+      span {
+        font-weight: 600;
+      }
     }
     .img-wrapper {
       margin: auto;
@@ -39,7 +49,6 @@
   background: $accent;
   margin-top: 60px;
   position: relative;
-  right: -6%;
   .copy-wrapper {
     margin: 0;
     padding: 0 20px 30px 20px;
@@ -53,13 +62,14 @@
   }
 }
 
-.comment {
-  display: flex;
-  .img-wrapper {
-    padding: 40px 15px 0 0;
-    width: 25%;
+  .comment {
+    display: flex;
+    width: 90%;
+    .img-wrapper {
+      padding: 40px 15px 0 0;
+      width: 25%;
+    }
+    .copy-wrapper {
+      width: 75%;
+    }
   }
-  .copy-wrapper {
-    width: 75%;
-  }
-}
