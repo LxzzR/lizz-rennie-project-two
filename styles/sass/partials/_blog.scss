@@ -1,3 +1,4 @@
+// === BLOG STYLES ===
 .blog header {
   background: url(../../assets/blog-image.jpg) no-repeat;
   background-position: center;
@@ -9,42 +10,75 @@
 .blog main {
   background: $primary;
   padding: $mobile;
-  .blog-post {
-    background: $white;
-    border-right: 10px solid $accent;
-    border-bottom: 10px solid $accent;
-    position: relative;
-    left: 0;
-    width: 90%;
-    .copy-wrapper {
-      p {
-        padding: $mobile;
-      }
-      margin: 0;
-      padding: 0 5%;
-      .date {
-        font-style: italic;
-      }
-      span {
-        font-weight: 600;
-      }
+}
+
+.blog-post,
+.comments {
+  width: 90%;
+}
+
+.blog-post .copy-wrapper,
+.comments {
+  padding: 20px 10px 20px 15px;
+}
+
+// Blog post -----
+.blog-post {
+  background: $white;
+  border-right: 10px solid $accent;
+  border-bottom: 10px solid $accent;
+  position: relative;
+  left: 0;
+  .copy-wrapper {
+    padding-left: 5%;
+    p {
+      padding: $mobile;
     }
-    .img-wrapper {
-      margin: auto;
+    margin: 0;
+      .date {
+      font-style: italic;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .img-wrapper {
+    margin: auto;
+    position: relative;
+    top: -45px;
+    left: 0;
+    img {
       position: relative;
-      top: -45px;
-      left: 0;
-      img {
-        position: relative;
-      }
-      &::before {
-        @include pseudo-accent(-10px, 10px)
-      }
+    }
+    &::before {
+      @include pseudo-accent(-10px, 10px)
     }
   }
 }
 
-.side-bar {
+// Blog Comments -----
+.comments {
+  padding-left: 5%;
+  .comment {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .img-wrapper {
+      width: 20%;
+      padding-top: 30px;
+    }
+    .copy-wrapper {
+      width: 75%;
+    }
+  }
+  form {
+    width: 100%;
+  }
+}
+
+// Side bar -----
+.side-bar { 
   display: none;
   background: $accent;
   margin-top: 60px;
@@ -61,15 +95,3 @@
     }
   }
 }
-
-  .comment {
-    display: flex;
-    width: 90%;
-    .img-wrapper {
-      padding: 40px 15px 0 0;
-      width: 25%;
-    }
-    .copy-wrapper {
-      width: 75%;
-    }
-  }
