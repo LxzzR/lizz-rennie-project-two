@@ -1,3 +1,4 @@
+// === CONTACT ===
 .contact header {
   background: url(../../assets/contact-image.jpg) no-repeat;
   // background-position: center;
@@ -8,22 +9,30 @@
 .contact main {
   background: $primary;
   padding: $mobile;
-  form {
-    .form-wrapper {
-      background: $white;
-      padding: 20px;
-      position: relative;
-    }
-    background: $white;
-    position: relative;
-    &::before {
-      @include pseudo-accent(-10px, 10px);
-    }
+}
+
+.contact form {
+  padding: 0;
+  position: relative;
+  display: block;
+  &::before {
+    @include pseudo-accent(-10px, 10px);
   }
 }
 
+.form-wrapper {
+  background: $white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background: $white;
+  position: relative;
+  
+}
+
 .social {
-  padding-top: 30px;
+  padding: 50px 0 30px;
   li {
     display: inline-block;
     a i {

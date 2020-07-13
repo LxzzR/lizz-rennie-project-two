@@ -1,5 +1,6 @@
+// === DESKTOP STYLES ===
 @media all and (min-width: 1024px) {
-  // GLOBAL
+  // Global -----
   .mobile-menu {
     display: none;
   }
@@ -7,7 +8,7 @@
     display: block;
   }
   
-  // HOME PAGE
+  // HOMEPAGE -----
   .landing {
     height: 90vh;
     min-height: 700px;
@@ -24,7 +25,7 @@
   .site-features .container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     .copy-wrapper {
       width: 40%;
       position: relative;
@@ -39,12 +40,21 @@
     width: 40%;
   }
 
-  // BLOG
+  // BLOG -----
+  .blog header {
+    height: 100vh;
+  }
+
   .blog .blog-post,
   .comments {
     width: 60%;
   }
+
+  .side-bar {
+    display: block;
+  }
 }
+
 
 @media all and (min-width: 1500px) {
   .landing {

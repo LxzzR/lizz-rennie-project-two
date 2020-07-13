@@ -1,15 +1,20 @@
 // === BLOG STYLES ===
+.blog {
+  background: $primary;
+}
 .blog header {
   background: url(../../assets/blog-image.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+  height: 30vh;
+  min-height: 250px;
   padding: 0;
-  min-height: 40vh;
 }
 
 .blog main {
   background: $primary;
   padding: $mobile;
+  position: relative;
 }
 
 .blog-post,
@@ -79,10 +84,18 @@
 
 // Side bar -----
 .side-bar { 
-  display: none;
   background: $accent;
+  border-left: 10px solid $accent;
+  display: none;
   margin-top: 60px;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25%;
+  .img-wrapper {
+    position: relative;
+    top: -15px;
+  }
   .copy-wrapper {
     margin: 0;
     padding: 0 20px 30px 20px;

@@ -37,7 +37,7 @@
   padding: $tablet;
 }
 
-  // Home page ----- 
+  // HOME PAGE ----- 
   .landing {
     height: 50vh;
     min-height: 500px;
@@ -105,14 +105,20 @@
     }
   }
 
-  //Blog -----
+  //BLOG -----
   .blog header {
+    background-position: center;
     min-height: 350px;
+    height: 40vh;
   }
 
   .blog-post,
   .comments {
     width: 90%;
+  }
+
+  .blog-post {
+    top: -50px;
   }
 
   .blog-post .copy-wrapper,

@@ -54,6 +54,7 @@ h1 {
 }
 
 h2,
+h3,
 .logo,
 button {
   font-family: "Kumar One", cursive;
@@ -71,6 +72,7 @@ h3,
 p,
 a,
 address,
+ul,
 input::-webkit-input-placeholder,
 .comments h3 {
   font-family: "Lato", arial, helvetica, sans-Serif;
@@ -80,6 +82,7 @@ input::-webkit-input-placeholder,
 p,
 a,
 address,
+ul,
 input:-ms-input-placeholder,
 .comments h3 {
   font-family: "Lato", arial, helvetica, sans-Serif;
@@ -89,6 +92,7 @@ input:-ms-input-placeholder,
 p,
 a,
 address,
+ul,
 input::-ms-input-placeholder,
 .comments h3 {
   font-family: "Lato", arial, helvetica, sans-Serif;
@@ -98,6 +102,7 @@ input::-ms-input-placeholder,
 p,
 a,
 address,
+ul,
 input::placeholder,
 .comments h3 {
   font-family: "Lato", arial, helvetica, sans-Serif;
@@ -616,17 +621,23 @@ footer {
   width: 100%;
 }
 
+.blog {
+  background: #E0FDDF;
+}
+
 .blog header {
   background: url(../../assets/blog-image.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+  height: 30vh;
+  min-height: 250px;
   padding: 0;
-  min-height: 40vh;
 }
 
 .blog main {
   background: #E0FDDF;
   padding: 20px 0;
+  position: relative;
 }
 
 .blog-post,
@@ -716,10 +727,19 @@ footer {
 }
 
 .side-bar {
-  display: none;
   background: #F8FB05;
+  border-left: 10px solid #F8FB05;
+  display: none;
   margin-top: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25%;
+}
+
+.side-bar .img-wrapper {
   position: relative;
+  top: -15px;
 }
 
 .side-bar .copy-wrapper {
@@ -747,18 +767,13 @@ footer {
   padding: 20px 0;
 }
 
-.contact main form {
-  background: #f5f5f5;
+.contact form {
+  padding: 0;
   position: relative;
+  display: block;
 }
 
-.contact main form .form-wrapper {
-  background: #f5f5f5;
-  padding: 20px;
-  position: relative;
-}
-
-.contact main form::before {
+.contact form::before {
   background: #F8FB05;
   bottom: -10px;
   content: '';
@@ -768,8 +783,25 @@ footer {
   width: 100%;
 }
 
+.form-wrapper {
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background: #f5f5f5;
+  position: relative;
+}
+
 .social {
-  padding-top: 30px;
+  padding: 50px 0 30px;
 }
 
 .social li {
@@ -901,11 +933,16 @@ footer {
     right: -20%;
   }
   .blog header {
+    background-position: center;
     min-height: 350px;
+    height: 40vh;
   }
   .blog-post,
   .comments {
     width: 90%;
+  }
+  .blog-post {
+    top: -50px;
   }
   .blog-post .copy-wrapper,
   .comments {
@@ -939,9 +976,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .site-features .container .copy-wrapper {
     width: 40%;
@@ -954,9 +990,15 @@ footer {
   .featured-articles .container article {
     width: 40%;
   }
+  .blog header {
+    height: 100vh;
+  }
   .blog .blog-post,
   .comments {
     width: 60%;
+  }
+  .side-bar {
+    display: block;
   }
 }
 

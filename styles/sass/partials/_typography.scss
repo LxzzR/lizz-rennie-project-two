@@ -25,6 +25,7 @@ h1 {
 }
 
 h2,
+h3,
 .logo,
 button {
   font-family: $accent-text;
@@ -45,6 +46,7 @@ h3,
 p,
 a,
 address,
+ul,
 input::placeholder,
 .comments h3 {
   font-family: $main-text;
