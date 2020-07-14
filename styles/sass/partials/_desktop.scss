@@ -76,12 +76,12 @@
   }
 }
 
-// === LARGE SCREEN STYLES ===
+// === VERY LARGE SCREEN STYLES ===
 @media all and (min-width: 1500px) {
   header,
   main,
   footer {
-    max-width: 1800px;
+    max-width: 2000px;
     margin: 0 auto;
   }
   
