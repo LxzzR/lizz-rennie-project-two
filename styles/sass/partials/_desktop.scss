@@ -77,14 +77,11 @@
 }
 
 // === VERY LARGE SCREEN STYLES ===
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1600px) {
   header,
-  main,
-  footer {
+  main {
     max-width: 2400px;
-    margin: 0 auto;
   }
-  
   .landing {
     min-height: 900px;
   }
